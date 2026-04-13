@@ -1,0 +1,31 @@
+# Maven
+target/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE - IntelliJ / Eclipse
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# Test output
+test-output/
+
+# Build files
+*.jar
+*.war
+*.ear
+
+# Temp files
+*.tmp
+*.swp
+
+# Environment
+.env
