@@ -1,0 +1,55 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Furkan",
+      "location": "Türkiye",
+      "phone": "1234567890",
+      "courses": [
+        "Java",
+        "Selenium"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Henry",
+      "location": "France",
+      "phone": "98876543213",
+      "courses": [
+        "Python",
+        "Appium"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Xi",
+      "location": "China",
+      "phone": "165498765",
+      "courses": [
+        "C#",
+        "RestAPI"
+      ]
+    },
+    {
+      "name": "Margret",
+      "location": "Liberia",
+      "phone": "367-887-1754",
+      "courses": [
+        "JavaScript",
+        "Postman"
+      ],
+      "id": "_TXQ5gSBDKU"
+    },
+    {
+      "name": "Lou",
+      "location": "Antigua and Barbuda",
+      "phone": "314-560-1366",
+      "courses": [
+        "JavaScript",
+        "Postman"
+      ],
+      "id": "4oecmuCRE3w"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
