@@ -49,6 +49,11 @@
         "Postman"
       ],
       "id": "4oecmuCRE3w"
+    },
+    {
+      "empty": false,
+      "mapType": "java.util.HashMap",
+      "id": "o2Byx4mJ48k"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

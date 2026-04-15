@@ -28,6 +28,14 @@
     <scope>test</scope>
 </dependency>
 
+<!-- Source: https://mvnrepository.com/artifact/org.json/json -->
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20251224</version>
+    <scope>compile</scope>
+</dependency>
+
 <dependency>
     <groupId>com.google.code.gson</groupId>
     <artifactId>gson</artifactId>
