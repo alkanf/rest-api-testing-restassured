@@ -53,10 +53,9 @@ public class AuthenticationTest {
 			            .log().body();
 			    }
 			    
-				// 4. API Key Authentication
+				// 5. API Key Authentication
 			    @Test
 			    void verifyAPIKeyAuth() {
-			        String sampleToken = "bearer_sample_token_eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkFsa2FuIn0";
 
 			        given()
 			             .queryParam("q", "İstanbul")
@@ -67,6 +66,33 @@ public class AuthenticationTest {
 			            .statusCode(200)
 			            .body("city", equalTo("İstanbul"))
 			            .log().body();
+			    }
+			    
+			    @Test()
+			    public String getAccessToken() {
+			        return
+			        given()
+			            .contentType("application/x-www-form-urlencoded")
+			            .formParam("grant_type", "client_credentials")
+			            .formParam("client_id", "xxx")
+			            .formParam("client_secret", "xxx")
+			        .when()
+			            .post("/oauth/token")
+			        .then()
+			            .extract().path("access_token");
+			    }
+			    
+			    @Test
+			    public void verifyOAuth() {
+
+			        String token = getAccessToken();
+
+			        given()
+			            .auth().oauth2(token)
+			        .when()
+			            .get("/users")
+			        .then()
+			            .statusCode(200);
 			    }
 	
 	
