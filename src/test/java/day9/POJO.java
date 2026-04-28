@@ -1,5 +1,8 @@
 package day9;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown=true)
 public class POJO {
 //variable, only body variables. Not dynamic variables like "id"
 String name;
