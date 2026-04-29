@@ -12,7 +12,7 @@ int stuID;
 public void testSerialization() { //Java object / Pojo -> JSON
 String courses[] = {"Java", "C+"};
 POJO pj = new POJO("Ahmet", "İstanbul", "5423423234", courses);
-	int stuID = given()
+	 stuID = given()
 	       .contentType("application/json")
 	       .body(pj) //Cant send directly pojo/java object, must specify content type. This is serialization
 	.when()
